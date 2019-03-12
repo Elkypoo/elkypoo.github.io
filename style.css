@@ -68,8 +68,8 @@ ul.topnav {
   
   ul.topnav li a.active {
       background-color: #395C78;
-      border-left: #EEEEEE 3px solid;
-      border-right: #EEEEEE 3px solid;
+      border-left: #EEEEEE 0px solid;
+      border-right: #EEEEEE 0px solid;
       z-index: 4;
       border-bottom: #395C78 0 solid;
     }
