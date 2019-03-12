@@ -1,5 +1,5 @@
 * {
-    background-color: rgb(30, 29, 34);
+    background-color: rgb(30, 29, 34, 0.9);
     position: relative;
     top: 0;
     margin: 0;
@@ -26,7 +26,12 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
     display: block;
-    background-color: #395C78;
+    background-color: rgba(57, 92, 120, 0.5);
+    /*background-color: #395C78;*/
+    z-index: 2;
+    position: absolute; 
+    width: 100%;
+    top: 47px; 
 }
 
 h1.single {
@@ -40,6 +45,7 @@ ul.topnav {
     overflow: hidden;
     background-color: #3E3E3E;
     position: sticky;
+    z-index: 6;
   }
   
   ul.topnav li {
@@ -140,7 +146,7 @@ h2.playstyle {
 button {
 
     border-radius: 2vw;
-    padding: 1.2vw;
+    margin: 1.2vw;
     max-width: 100%;
     max-height: 100%;
     border: 0;
@@ -154,16 +160,16 @@ button {
 
 .hidden {
     text-align: center;
-    padding: 0 5vw;
+    padding: 0;
 }
 
 #hiddenScout, #hiddenSoldier, #hiddenPyro, #hiddenDemoman, #hiddenHeavy, #hiddenEngineer, #hiddenMedic, #hiddenSniper, #hiddenSpy {
-    top: 3vh;
     display: none;
+    background-color: rgba(30, 29, 34, 0);
 }
 
 .footer {
-    margin-top: 10vh;
+    border-top: rgba(2, 2, 5, 0.3) solid 8px;
 }
 
 .footer-p {
@@ -221,3 +227,34 @@ button {
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(29, 46, 61); 
 }
+
+#parallax-container {
+    display: block;
+    height: 30vw;
+    z-index: 0;
+ }
+ 
+ #parallax-container div {
+    position: fixed;
+    top: 0;
+    background-position: center !important;
+    transform: translateY(0px);
+    height: 1440px; 
+    width: 2560px;
+    z-index: 0; 
+ }
+ 
+ #content {
+    position: relative;
+ }
+ 
+ a {
+     background-color: rgba(30, 29, 34, 0);
+ }
+
+ p.intro {
+    border-top: rgba(2, 2, 5, 0.3) solid 8px;
+}
+
+
+
