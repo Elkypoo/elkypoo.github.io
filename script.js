@@ -332,7 +332,7 @@ function checkbox() {
 function cookieCheck() {
     var x = document.cookie;
     var parallax = document.getElementsByClassName("parallax");
-    window.alert(x);
+    //window.alert("hmm yes i say, ''" + x + "''");
     if (x == "parallax=disabled") {
         document.getElementById("parallaxCheckbox").checked = true;
         parallax[1].style.width = "auto";
@@ -358,4 +358,9 @@ function cookieCheck() {
         parallax[9].style.width = "2560px";
         parallax[10].style.width = "2560px";
     }
+}
+
+function onLoad() {
+    cookieCheck();
+    disableButtonsClasses();
 }
