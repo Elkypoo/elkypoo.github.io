@@ -1,5 +1,5 @@
 * {
-    background-color: rgba(30, 29, 34, 0.8);
+    background-color: rgba(30, 29, 34, 1);
     position: relative;
     top: 0;
     margin: 0;
@@ -15,7 +15,7 @@ html, body {
 
 h1 {
     text-align: center;
-    padding: 6% 0;
+    padding: 12vh 0 10.5vh 0;
     color: #EEEEEE;
     background-size: 100% auto;
     font-family: 'Roboto', sans-serif;
@@ -27,11 +27,9 @@ h1 {
     background-position: center;
     display: block;
     background-color: rgba(57, 92, 120, 0.5);
-    /*background-color: #395C78;*/
     z-index: 2;
-    position: absolute; 
+    position: relative; 
     width: 100%;
-    top: 47px; 
 }
 
 h1.single {
@@ -79,6 +77,10 @@ ul.topnav {
   @media screen and (max-width: 600px) {
     ul.topnav li.right, 
     ul.topnav li {float: none !important;}
+    #parallax-container div {
+        width:auto;
+        height:auto; 
+     }
   }
 
 h2, p {
@@ -95,13 +97,14 @@ h2 {
     background-color: rgba(30, 29, 34, 0);
 }
 
-h2.first {
-    padding-top: 6%;
+h2:first-of-type {
+    padding-top: 4%;
+   
 }
 
 .buffer {
     visibility: hidden;
-    bottom: 9%;
+    bottom: 400%;
 }
 
 p {
@@ -109,9 +112,9 @@ p {
     overflow: hidden;
     width: 65vw;
     padding-left: 2.5%;
-    background-color: rgba(30, 29, 34, 0);
     text-align: left;
     padding-bottom: 10vh;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 img {
@@ -163,17 +166,15 @@ img {
 
 #parallax-container {
     display: block;
-    height: 30vw;
     z-index: 0;
  }
  
  #parallax-container div {
     position: fixed;
-    top: 0;
     background-position: center !important;
     transform: translateY(0px);
-    height: 1440px; 
-    width: 2560px;
+    width: 100vw;
+    height:1440px;
     z-index: 0; 
  }
  
@@ -182,9 +183,19 @@ img {
  }
 
  .p1 {
-    border-top: rgba(2, 2, 5, 0.3) solid 8px;
+    background-color: rgba(0, 0, 0, 0) !important;
+    background-image: linear-gradient(to bottom, rgba(2, 2, 5, 0.72), rgba(30, 29, 34, 1)) !important;
  }
 
- .p1, .p2 {
-    background-color: rgba(30, 29, 34, 0.9);
- }
+a.resolutionwarning {
+    visibility: hidden;
+}
+@media screen and (min-width: 2561px) { 
+    #parallax-container div {
+        width:auto;
+        height:auto; 
+     }
+     a.resolutionwarning {
+        visibility: visible;
+    }
+}

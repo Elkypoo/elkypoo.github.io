@@ -1,5 +1,5 @@
 * {
-    background-color: rgb(30, 29, 34, 0.8);
+    background-color: rgb(30, 29, 34, 1);
     position: relative;
     top: 0;
     margin: 0;
@@ -15,7 +15,7 @@ html, body {
 
 h1 {
     text-align: center;
-    padding: 6% 0;
+    padding: 12vh 0 10.5vh 0;
     color: #EEEEEE;
     background-size: 100% auto;
     font-family: 'Roboto', sans-serif;
@@ -27,11 +27,9 @@ h1 {
     background-position: center;
     display: block;
     background-color: rgba(57, 92, 120, 0.5);
-    /*background-color: #395C78;*/
     z-index: 2;
-    position: absolute; 
+    position: relative;
     width: 100%;
-    top: 47px; 
 }
 
 h1.single {
@@ -92,10 +90,13 @@ h2 {
     font-weight: 400;
     font-size: 3.75vh;
     padding: 3% 0;
+
 }
 
-h2.first {
+h2:first-of-type {
     padding-top: 6%;
+    background-color: rgba(0, 0, 0, 0) !important;
+    background-image: linear-gradient(to bottom, rgba(30, 29, 34, 0.9), rgba(30, 29, 34, 1)) !important;
 }
 
 .buffer {
@@ -156,6 +157,8 @@ button {
 .buttons {
     text-align: center;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to bottom, rgba(30, 29, 34, 0.8), rgba(30, 29, 34, 0.9)) !important;
 }
 
 .hidden {
@@ -230,7 +233,7 @@ button {
 
 #parallax-container {
     display: block;
-    height: 30vw;
+    height: 0vw;
     z-index: 0;
  }
  
@@ -238,10 +241,11 @@ button {
     position: fixed;
     top: 0;
     background-position: center !important;
-    transform: translateY(0px);
+    transform: translateY(0);
     height: 1440px; 
     width: 2560px;
     z-index: 0; 
+    background-repeat: no-repeat;
  }
  
  #content {
@@ -253,7 +257,21 @@ button {
  }
 
  p.intro {
-    border-top: rgba(2, 2, 5, 0.3) solid 8px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to bottom, rgba(2, 2, 5, 0.72), rgba(30, 29, 34, 0.8)) !important;
+}
+
+a.resolutionwarning {
+    visibility: hidden;
+}
+@media screen and (min-width: 2561px) { 
+    #parallax-container div {
+        width:auto;
+        height:auto; 
+     }
+     a.resolutionwarning {
+        visibility: visible;
+    }
 }
 
 
