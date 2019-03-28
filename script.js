@@ -17,7 +17,7 @@ var buttonMedic = document.getElementById("buttonMedic");
 var buttonSniper = document.getElementById("buttonSniper");
 var buttonSpy = document.getElementById("buttonSpy");
 
-function disableButtons() {
+function disableButtonsClasses() {
     var statusScout = document.getElementById("hiddenScout");
     var statusSoldier = document.getElementById("hiddenSoldier");
     var statusPyro = document.getElementById("hiddenPyro");
@@ -60,7 +60,7 @@ function hideTextScout() {
     var statusScout = document.getElementById("hiddenScout");
     var buttonScout = document.getElementById("buttonScout");
     if (statusScout.style.display === "none") {
-        disableButtons();
+        disableButtonsClasses();
         statusScout.style.display = "block";
         buttonScout.style.border = "#EEEEEE 3px solid"
     } else {
@@ -73,7 +73,7 @@ function hideTextSoldier() {
     var statusSoldier = document.getElementById("hiddenSoldier");
     var buttonSoldier = document.getElementById("buttonSoldier");
     if (statusSoldier.style.display === "none") {
-        disableButtons();
+        disableButtonsClasses();
         statusSoldier.style.display = "block";
         buttonSoldier.style.border = "#EEEEEE 3px solid"
     } else {
@@ -86,7 +86,7 @@ function hideTextPyro() {
     var statusPyro = document.getElementById("hiddenPyro");
     var buttonPyro = document.getElementById("buttonPyro");
     if (statusPyro.style.display === "none") {
-        disableButtons();
+        disableButtonsClasses();
         statusPyro.style.display = "block";
         buttonPyro.style.border = "#EEEEEE 3px solid"
     } else {
@@ -99,7 +99,7 @@ function hideTextDemoman() {
     var statusDemoman = document.getElementById("hiddenDemoman");
     var buttonDemoman = document.getElementById("buttonDemoman");
     if (statusDemoman.style.display === "none") {
-        disableButtons();
+        disableButtonsClasses();
         statusDemoman.style.display = "block";
         buttonDemoman.style.border = "#EEEEEE 3px solid"
     } else {
@@ -112,7 +112,7 @@ function hideTextHeavy() {
     var statusHeavy = document.getElementById("hiddenHeavy");
     var buttonHeavy = document.getElementById("buttonHeavy");
     if (statusHeavy.style.display === "none") {
-        disableButtons();
+        disableButtonsClasses();
         statusHeavy.style.display = "block";
         buttonHeavy.style.border = "#EEEEEE 3px solid"
     } else {
@@ -125,7 +125,7 @@ function hideTextEngineer() {
     var statusEngineer = document.getElementById("hiddenEngineer");
     var buttonEngineer = document.getElementById("buttonEngineer");
     if (statusEngineer.style.display === "none") {
-        disableButtons();
+        disableButtonsClasses();
         statusEngineer.style.display = "block";
         buttonEngineer.style.border = "#EEEEEE 3px solid"
     } else {
@@ -138,7 +138,7 @@ function hideTextMedic() {
     var statusMedic = document.getElementById("hiddenMedic");
     var buttonMedic = document.getElementById("buttonMedic");
     if (statusMedic.style.display === "none") {
-        disableButtons();
+        disableButtonsClasses();
         statusMedic.style.display = "block";
         buttonMedic.style.border = "#EEEEEE 3px solid"
     } else {
@@ -151,7 +151,7 @@ function hideTextSniper() {
     var statusSniper = document.getElementById("hiddenSniper");
     var buttonSniper = document.getElementById("buttonSniper");
     if (statusSniper.style.display === "none") {
-        disableButtons();
+        disableButtonsClasses();
         statusSniper.style.display = "block";
         buttonSniper.style.border = "#EEEEEE 3px solid"
     } else {
@@ -164,7 +164,7 @@ function hideTextSpy() {
     var statusSpy = document.getElementById("hiddenSpy");
     var buttonSpy = document.getElementById("buttonSpy");
     if (statusSpy.style.display === "none") {
-        disableButtons();
+        disableButtonsClasses();
         statusSpy.style.display = "block";
         buttonSpy.style.border = "#EEEEEE 3px solid"
     } else {
@@ -172,6 +172,159 @@ function hideTextSpy() {
         buttonSpy.style.border = "0"
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var statusUltiduo = document.getElementById("hiddenUltiduo");
+var statusFours = document.getElementById("hiddenFours");
+var statusSixes = document.getElementById("hiddenSixes");
+var statusProlander = document.getElementById("hiddenProlander");
+var statusHighlander = document.getElementById("hiddenHighlander");
+var buttonUltiduo = document.getElementById("buttonUltiduo");
+var buttonFours = document.getElementById("buttonFours");
+var buttonSixes = document.getElementById("buttonSixes");
+var buttonProlander = document.getElementById("buttonProlander");
+var buttonHighlander = document.getElementById("buttonHighlander");
+
+function disableButtonsGamemodes() {
+    var statusUltiduo = document.getElementById("hiddenUltiduo");
+    var statusFours = document.getElementById("hiddenFours");
+    var statusSixes = document.getElementById("hiddenSixes");
+    var statusProlander = document.getElementById("hiddenProlander");
+    var statusHighlander = document.getElementById("hiddenHighlander");
+    var buttonUltiduo = document.getElementById("buttonUltiduo");
+    var buttonFours = document.getElementById("buttonFours");
+    var buttonSixes = document.getElementById("buttonSixes");
+    var buttonProlander = document.getElementById("buttonProlander");
+    var buttonHighlander = document.getElementById("buttonHighlander");
+    statusUltiduo.style.display = "none";
+    statusFours.style.display = "none";
+    statusSixes.style.display = "none";
+    statusProlander.style.display = "none";
+    statusHighlander.style.display = "none";
+    buttonUltiduo.style.border = "0";
+    buttonFours.style.border = "0";
+    buttonSixes.style.border = "0";
+    buttonProlander.style.border = "0";
+    buttonHighlander.style.border = "0";
+}
+
+function hideTextUltiduo() {
+    var statusUltiduo = document.getElementById("hiddenUltiduo");
+    var buttonUltiduo = document.getElementById("buttonUltiduo");
+    if (statusUltiduo.style.display === "none") {
+        disableButtonsGamemodes();
+        statusUltiduo.style.display = "block";
+        buttonUltiduo.style.border = "#EEEEEE 3px solid"
+    } else {
+        statusUltiduo.style.display = "none";
+        buttonUltiduo.style.border = "0"
+    }
+}
+
+function hideTextFours() {
+    var statusFours = document.getElementById("hiddenFours");
+    var buttonFours = document.getElementById("buttonFours");
+    if (statusFours.style.display === "none") {
+        disableButtonsGamemodes();
+        statusFours.style.display = "block";
+        buttonFours.style.border = "#EEEEEE 3px solid"
+    } else {
+        statusFours.style.display = "none";
+        buttonFours.style.border = "0"
+    }
+}
+
+function hideTextSixes() {
+    var statusSixes = document.getElementById("hiddenSixes");
+    var buttonSixes = document.getElementById("buttonSixes");
+    if (statusSixes.style.display === "none") {
+        disableButtonsGamemodes();
+        statusSixes.style.display = "block";
+        buttonSixes.style.border = "#EEEEEE 3px solid"
+    } else {
+        statusSixes.style.display = "none";
+        buttonSixes.style.border = "0"
+    }
+}
+
+function hideTextProlander() {
+    var statusProlander = document.getElementById("hiddenProlander");
+    var buttonProlander = document.getElementById("buttonProlander");
+    if (statusProlander.style.display === "none") {
+        disableButtonsGamemodes();
+        statusProlander.style.display = "block";
+        buttonProlander.style.border = "#EEEEEE 3px solid"
+    } else {
+        statusProlander.style.display = "none";
+        buttonProlander.style.border = "0"
+    }
+}
+
+function hideTextHighlander() {
+    var statusHighlander = document.getElementById("hiddenHighlander");
+    var buttonHighlander = document.getElementById("buttonHighlander");
+    if (statusHighlander.style.display === "none") {
+        disableButtonsGamemodes();
+        statusHighlander.style.display = "block";
+        buttonHighlander.style.border = "#EEEEEE 3px solid"
+    } else {
+        statusHighlander.style.display = "none";
+        buttonHighlander.style.border = "0"
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 window.addEventListener('scroll', () => {
    let parent = document.getElementById('parallax-container');

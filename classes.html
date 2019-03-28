@@ -1,5 +1,5 @@
 <head>
-  <link rel="stylesheet" href="style-classes.css">
+  <link rel="stylesheet" href="style-buttons.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
   <script src="script.js"></script>
 
@@ -20,14 +20,14 @@
 
 </head>
 
-<body onload="disableButtons()">
+<body onload="disableButtonsClasses()">
 
   <div id="parallax-container">
-    <div style="background: url(images/parallaxgully5.png);"></div>
-    <div style="background: url(images/parallaxgully4.png);"></div>
-    <div style="background: url(images/parallaxgully3.png);"></div>
-    <div style="background: url(images/parallaxgully2.png);"></div>
-    <div style="background: url(images/parallaxgully1.png);"></div>
+    <div style="background: url(images/parallax/parallaxgully5.png);"></div>
+    <div style="background: url(images/parallax/parallaxgully4.png);"></div>
+    <div style="background: url(images/parallax/parallaxgully3.png);"></div>
+    <div style="background: url(images/parallax/parallaxgully2.png);"></div>
+    <div style="background: url(images/parallax/parallaxgully1.png);"></div>
   </div>
 
   <ul class="topnav">
@@ -41,10 +41,10 @@
       <a href="gamemodes.html">Gamemodes</a>
     </li>
     <li>
-      <a href="#">Videos</a>
+      <a href="videos.html">Videos</a>
     </li>
     <li>
-      <a href="#">Partners</a>
+      <a href="partners.html">Partners</a>
     </li>
     <li>
       <a href="practice.html">Practice</a>
@@ -62,7 +62,8 @@
   <p class="intro" style="padding: 3vh; text-align:center;">There are 9 classes in TF2, as well as many types of
     competitive
     gamemodes. Certain team compositions are known as
-    the 'meta' for that gamemode. It is not set in stone, it is simply a recommendation for what the community has
+    the <a
+    title='normal team composition for a competitive gamemode'>'meta'</a> for that gamemode. It is not set in stone, it is simply a recommendation for what the community has
     found to be the most effective and rewarding.
     <br><br>
     All information found on this page is not hard fact, but instead mostly recommendation. Be aware there are varying
@@ -72,23 +73,23 @@
   </p>
 
   <div class="buttons">
-    <button onclick="hideTextScout()"><img src="images/class_emblems/scout.png" id="buttonScout"></button>
+    <button onclick="hideTextScout()" title="Scout"> <img src="images/class_emblems/scout.png" id="buttonScout"></button>
 
-    <button onclick="hideTextSoldier()"><img src="images/class_emblems/soldier.png" id="buttonSoldier"></button>
+    <button onclick="hideTextSoldier()" title="Soldier"> <img src="images/class_emblems/soldier.png" id="buttonSoldier"></button>
 
-    <button onclick="hideTextPyro()"><img src="images/class_emblems/pyro.png" id="buttonPyro"></button>
+    <button onclick="hideTextPyro()" title="Pyro"> <img src="images/class_emblems/pyro.png" id="buttonPyro"></button>
 
-    <button onclick="hideTextDemoman()"><img src="images/class_emblems/demoman.png" id="buttonDemoman"></button>
+    <button onclick="hideTextDemoman()" title="Demoman"> <img src="images/class_emblems/demoman.png" id="buttonDemoman"></button>
 
-    <button onclick="hideTextHeavy()"><img src="images/class_emblems/heavy.png" id="buttonHeavy"></button>
+    <button onclick="hideTextHeavy()" title="Heavy"> <img src="images/class_emblems/heavy.png" id="buttonHeavy"></button>
 
-    <button onclick="hideTextEngineer()"><img src="images/class_emblems/engineer.png" id="buttonEngineer"></button>
+    <button onclick="hideTextEngineer()" title="Engineer"> <img src="images/class_emblems/engineer.png" id="buttonEngineer"></button>
 
-    <button onclick="hideTextMedic()"><img src="images/class_emblems/medic.png" id="buttonMedic"></button>
+    <button onclick="hideTextMedic()" title="Medic"> <img src="images/class_emblems/medic.png" id="buttonMedic"></button>
 
-    <button onclick="hideTextSniper()"><img src="images/class_emblems/sniper.png" id="buttonSniper"></button>
+    <button onclick="hideTextSniper()" title="Sniper"> <img src="images/class_emblems/sniper.png" id="buttonSniper"></button>
 
-    <button onclick="hideTextSpy()"><img src="images/class_emblems/spy.png" id="buttonSpy"></button>
+    <button onclick="hideTextSpy()" title="Spy"> <img src="images/class_emblems/spy.png" id="buttonSpy"></button>
   </div>
 
   <div id="hiddenScout" class="hidden">
