@@ -300,7 +300,7 @@ function checkbox() {
     var checkbox = document.getElementById("parallaxCheckbox");
     var parallax = document.getElementsByClassName("parallax");
   
-    if (checkbox.checked == true){
+    if (checkbox.checked == false){
         document.cookie = "parallax=disabled";
         parallax[1].style.width = "auto";
         parallax[2].style.width = "auto";
@@ -332,9 +332,8 @@ function checkbox() {
 function cookieCheck() {
     var x = document.cookie;
     var parallax = document.getElementsByClassName("parallax");
-    //window.alert("hmm yes i say, ''" + x + "''");
     if (x == "parallax=disabled") {
-        document.getElementById("parallaxCheckbox").checked = true;
+        document.getElementById("parallaxCheckbox").checked = false;
         parallax[1].style.width = "auto";
         parallax[2].style.width = "auto";
         parallax[3].style.width = "auto";
@@ -346,7 +345,7 @@ function cookieCheck() {
         parallax[9].style.width = "auto";
         parallax[10].style.width = "auto";
     } else {
-        document.getElementById("parallaxCheckbox").checked = false;
+        document.getElementById("parallaxCheckbox").checked = true;
         parallax[1].style.width = "2560px";
         parallax[2].style.width = "2560px";
         parallax[3].style.width = "2560px";
@@ -361,6 +360,7 @@ function cookieCheck() {
 }
 
 function onLoad() {
+    console.log('Ran onLoad() successfully...')
     cookieCheck();
     disableButtonsClasses();
 }

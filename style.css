@@ -91,7 +91,7 @@ h2, p {
 h2 {
     text-align: left;
     left: 2vw;
-    font-weight: 400;
+    -font-weight: 400;
     font-size: 3.75vh;
     padding: 3% 0;
     background-color: rgba(30, 29, 34, 0);
@@ -199,3 +199,11 @@ a.resolutionwarning {
         visibility: visible;
     }
 }
+  
+  #parallaxCheckbox {
+    vertical-align: center;
+    top: 2px;
+    height: 14px;
+    width: 14px;
+    background-color: #eee;
+  }

@@ -274,5 +274,13 @@ a.resolutionwarning {
     }
 }
 
+#parallaxCheckbox {
+    vertical-align: center;
+    top: 2px;
+    height: 14px;
+    width: 14px;
+    background-color: #eee;
+  }
+
 
 
