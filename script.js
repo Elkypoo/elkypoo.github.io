@@ -330,7 +330,9 @@ function checkbox() {
   }
 
 function cookieCheck() {
-    if (document.cookie == "parallax=disabled") {
+    var x = document.cookie;
+    window.alert(x)
+    if (x == "parallax=disabled") {
         parallax[1].style.width = "auto";
         parallax[2].style.width = "auto";
         parallax[3].style.width = "auto";
