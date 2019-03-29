@@ -164,6 +164,7 @@ button {
 .hidden {
     text-align: center;
     padding: 0;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #hiddenScout, #hiddenSoldier, #hiddenPyro, #hiddenDemoman, #hiddenHeavy, #hiddenEngineer, #hiddenMedic, #hiddenSniper, #hiddenSpy {
