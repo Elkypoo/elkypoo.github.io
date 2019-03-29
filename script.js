@@ -1,3 +1,74 @@
+window.addEventListener('scroll', () => {
+    let parent = document.getElementById('parallax-container');
+    let children = parent.getElementsByTagName('div');
+    for (let i = 0; i < children.length; i++) {
+        children[i].style.transform = 'translateY(-' + (window.pageYOffset * i / children.length) + 'px)';
+    }
+}, false)
+
+function checkbox() {
+    var checkbox = document.getElementById("parallaxCheckbox");
+    var parallax = document.getElementsByClassName("parallax");
+
+    if (checkbox.checked == false) {
+        document.cookie = "parallax=disabled";
+        parallax[1].style.width = "auto";
+        parallax[2].style.width = "auto";
+        parallax[3].style.width = "auto";
+        parallax[4].style.width = "auto";
+        parallax[5].style.width = "auto";
+        parallax[6].style.width = "auto";
+        parallax[7].style.width = "auto";
+        parallax[8].style.width = "auto";
+        parallax[9].style.width = "auto";
+        parallax[10].style.width = "auto";
+
+
+    } else {
+        document.cookie = "parallax=enabled";
+        parallax[1].style.width = "2560px";
+        parallax[2].style.width = "2560px";
+        parallax[3].style.width = "2560px";
+        parallax[4].style.width = "2560px";
+        parallax[5].style.width = "2560px";
+        parallax[6].style.width = "2560px";
+        parallax[7].style.width = "2560px";
+        parallax[8].style.width = "2560px";
+        parallax[9].style.width = "2560px";
+        parallax[10].style.width = "2560px";
+    }
+}
+
+function cookieCheck() {
+    var x = document.cookie;
+    var parallax = document.getElementsByClassName("parallax");
+    if (x == "parallax=disabled") {
+        document.getElementById("parallaxCheckbox").checked = false;
+        parallax[1].style.width = "auto";
+        parallax[2].style.width = "auto";
+        parallax[3].style.width = "auto";
+        parallax[4].style.width = "auto";
+        parallax[5].style.width = "auto";
+        parallax[6].style.width = "auto";
+        parallax[7].style.width = "auto";
+        parallax[8].style.width = "auto";
+        parallax[9].style.width = "auto";
+        parallax[10].style.width = "auto";
+    } else {
+        document.getElementById("parallaxCheckbox").checked = true;
+        parallax[1].style.width = "2560px";
+        parallax[2].style.width = "2560px";
+        parallax[3].style.width = "2560px";
+        parallax[4].style.width = "2560px";
+        parallax[5].style.width = "2560px";
+        parallax[6].style.width = "2560px";
+        parallax[7].style.width = "2560px";
+        parallax[8].style.width = "2560px";
+        parallax[9].style.width = "2560px";
+        parallax[10].style.width = "2560px";
+    }
+}
+
 var statusScout = document.getElementById("hiddenScout");
 var statusSoldier = document.getElementById("hiddenSoldier");
 var statusPyro = document.getElementById("hiddenPyro");
@@ -275,92 +346,4 @@ function hideTextHighlander() {
         statusHighlander.style.display = "none";
         buttonHighlander.style.border = "0"
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-window.addEventListener('scroll', () => {
-   let parent = document.getElementById('parallax-container');
-   let children = parent.getElementsByTagName('div');
-   for(let i = 0; i < children.length; i++) {
-     children[i].style.transform = 'translateY(-' + (window.pageYOffset * i / children.length) + 'px)';
-   }
-}, false)
-
-function checkbox() {
-    var checkbox = document.getElementById("parallaxCheckbox");
-    var parallax = document.getElementsByClassName("parallax");
-  
-    if (checkbox.checked == false){
-        document.cookie = "parallax=disabled";
-        parallax[1].style.width = "auto";
-        parallax[2].style.width = "auto";
-        parallax[3].style.width = "auto";
-        parallax[4].style.width = "auto";
-        parallax[5].style.width = "auto";
-        parallax[6].style.width = "auto";        
-        parallax[7].style.width = "auto";
-        parallax[8].style.width = "auto";
-        parallax[9].style.width = "auto";
-        parallax[10].style.width = "auto";
-        
-        
-    } else {
-        document.cookie = "parallax=enabled";
-        parallax[1].style.width = "2560px";
-        parallax[2].style.width = "2560px";
-        parallax[3].style.width = "2560px";
-        parallax[4].style.width = "2560px";
-        parallax[5].style.width = "2560px";
-        parallax[6].style.width = "2560px";        
-        parallax[7].style.width = "2560px";
-        parallax[8].style.width = "2560px";
-        parallax[9].style.width = "2560px";
-        parallax[10].style.width = "2560px";
-    }
-  }
-
-function cookieCheck() {
-    var x = document.cookie;
-    var parallax = document.getElementsByClassName("parallax");
-    if (x == "parallax=disabled") {
-        document.getElementById("parallaxCheckbox").checked = false;
-        parallax[1].style.width = "auto";
-        parallax[2].style.width = "auto";
-        parallax[3].style.width = "auto";
-        parallax[4].style.width = "auto";
-        parallax[5].style.width = "auto";
-        parallax[6].style.width = "auto";        
-        parallax[7].style.width = "auto";
-        parallax[8].style.width = "auto";
-        parallax[9].style.width = "auto";
-        parallax[10].style.width = "auto";
-    } else {
-        document.getElementById("parallaxCheckbox").checked = true;
-        parallax[1].style.width = "2560px";
-        parallax[2].style.width = "2560px";
-        parallax[3].style.width = "2560px";
-        parallax[4].style.width = "2560px";
-        parallax[5].style.width = "2560px";
-        parallax[6].style.width = "2560px";        
-        parallax[7].style.width = "2560px";
-        parallax[8].style.width = "2560px";
-        parallax[9].style.width = "2560px";
-        parallax[10].style.width = "2560px";
-    }
-}
-
-function onLoad() {
-    console.log('Ran onLoad() successfully...')
-    cookieCheck();
-    disableButtonsClasses();
 }

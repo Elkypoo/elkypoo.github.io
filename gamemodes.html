@@ -20,7 +20,11 @@
 
 </head>
 
-<body onload="onLoad()">
+<body onload="
+console.log('Ran onLoad() successfully...')
+disableButtonsGamemodes();
+cookieCheck();
+">
 
   <div id="parallax-container">
     <div class="parallax" style="background: url(images/parallax/parallaxprocess5.png);"></div>
@@ -67,10 +71,11 @@
       have been disabled at this resolution/zoom.</a></h1>
 
   <p class="intro" style="padding: 3vh; text-align:center;">There are quite a few different competitive gamemodes in
-    competitive TF2, all with their own common team compositions known as the 'meta'
+    competitive TF2, all with their own common team compositions known as the <a title='normal team composition of classes for a competitive gamemode'>'meta'</a>. Different leagues also have their own variations, maps, and rules for these gamemodes, 
+    so there will be some information on the leagues as well.
     <br><br>
-    All information found on this page is not hard fact, but instead mostly recommendation. Be aware there are varying
-    opinions in the community and these are just some of the most common.<br><br>
+    Some information found on this page is not hard fact, but instead may be opinionated. Be aware there are varying
+    opinions in the community and many of these are just some of the most common.<br><br>
     This page uses common competitive vocabulary and slang. Certain words will be within single-quotes (e.g. <a
       title='a definition would normally be here'>'word'</a>). You can hover over these for a small tooltip definition.
   </p>

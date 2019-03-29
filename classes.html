@@ -21,7 +21,11 @@
 
 </head>
 
-<body onload="onLoad()">
+<body onload="
+console.log('Ran onLoad() successfully...')
+disableButtonsClasses();
+cookieCheck();
+">
 
   <div id="parallax-container">
     <div class="parallax" style="background: url(images/parallax/parallaxgully5.png);"></div>
