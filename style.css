@@ -202,7 +202,7 @@ a.resolutionwarning {
     }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 740px) {
     ul.topnav li.right, 
     ul.topnav li {float: none !important;}
     img {width: 5.5vh !important;}
