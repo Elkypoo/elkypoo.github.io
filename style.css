@@ -196,6 +196,35 @@ a.resolutionwarning {
     background-color: #eee;
   }
 
+#container { width:100vw; height:auto; margin:auto; }
+.tf2c {
+    padding-bottom: 5px;
+    padding-left: 2.5%;
+    width: 740px;
+    text-align: center;
+}
+#tf2c {
+    color: #A2A09A;
+    text-align: center;
+    width: 740px;
+    
+}
+#tf2c-outer {
+width: 740px;
+height:635px;
+overflow:hidden;
+position:relative;
+border: #EEEEEE 3px solid;
+margin-left: 2.5%;
+}
+#tf2c-inner {
+position:absolute;
+top:-285px;
+left:-514px;
+width:1280px;
+height:1200px;
+}
+
 
 @media screen and (min-width: 2561px) { 
     #parallax-container div {
