@@ -1,7 +1,7 @@
-function writeCookie (key, value, hours) {
+function writeCookie(key, value, hours) {
     var date = new Date();
 
-    date.setTime(+ date + (hours * 3600000)); //60 * 60 * 1000
+    date.setTime(+ date + (hours * 3600000));
 
     window.document.cookie = key + "=" + value + "; expires=" + date.toGMTString() + "; path=/";
 
@@ -22,30 +22,16 @@ function checkbox() {
 
     if (checkbox.checked == false) {
         document.cookie = "parallax=disabled";
-        parallax[1].style.width = "auto";
-        parallax[2].style.width = "auto";
-        parallax[3].style.width = "auto";
-        parallax[4].style.width = "auto";
-        parallax[5].style.width = "auto";
-        parallax[6].style.width = "auto";
-        parallax[7].style.width = "auto";
-        parallax[8].style.width = "auto";
-        parallax[9].style.width = "auto";
-        parallax[10].style.width = "auto";
-
-
+        var i;
+        for (i = 0; i < (parallax.length - 1); i++) {
+            parallax[i + 1].style.width = "auto";
+        }
     } else {
         document.cookie = "parallax=enabled";
-        parallax[1].style.width = "2560px";
-        parallax[2].style.width = "2560px";
-        parallax[3].style.width = "2560px";
-        parallax[4].style.width = "2560px";
-        parallax[5].style.width = "2560px";
-        parallax[6].style.width = "2560px";
-        parallax[7].style.width = "2560px";
-        parallax[8].style.width = "2560px";
-        parallax[9].style.width = "2560px";
-        parallax[10].style.width = "2560px";
+        var i;
+        for (i = 0; i < (parallax.length - 1); i++) {
+            parallax[i + 1].style.width = "2560px";
+        }
     }
 }
 
@@ -54,43 +40,33 @@ function cookieCheck() {
     var parallax = document.getElementsByClassName("parallax");
     if (x.indexOf("parallax=disabled") != -1) {
         document.getElementById("parallaxCheckbox").checked = false;
-        parallax[1].style.width = "auto";
-        parallax[2].style.width = "auto";
-        parallax[3].style.width = "auto";
-        parallax[4].style.width = "auto";
-        parallax[5].style.width = "auto";
-        parallax[6].style.width = "auto";
-        parallax[7].style.width = "auto";
-        parallax[8].style.width = "auto";
-        parallax[9].style.width = "auto";
-        parallax[10].style.width = "auto";
+        var i;
+        for (i = 0; i < (parallax.length - 1); i++) {
+            parallax[i + 1].style.width = "auto";
+        }
     } else {
         document.getElementById("parallaxCheckbox").checked = true;
-        parallax[1].style.width = "2560px";
-        parallax[2].style.width = "2560px";
-        parallax[3].style.width = "2560px";
-        parallax[4].style.width = "2560px";
-        parallax[5].style.width = "2560px";
-        parallax[6].style.width = "2560px";
-        parallax[7].style.width = "2560px";
-        parallax[8].style.width = "2560px";
-        parallax[9].style.width = "2560px";
-        parallax[10].style.width = "2560px";
+        var i;
+        for (i = 0; i < (parallax.length - 1); i++) {
+            parallax[i + 1].style.width = "2560px";
+        }
     }
 }
 
 function tf2cwindow() {
     var iframeoverlay = document.getElementsByClassName("iframeoverlay");
     iframeoverlay[0].style.zIndex = "-2";
-    var tf2cpage = window.open("http://tf2center.com", "_blank", "height=100, width=100"); 
-    window.focus; 
-    setTimeout(function() {tf2cpage.close(); writeCookie("tf2cloaded", "true", 4); location.reload(), 5750});
-}; 
+    var tf2cpage = window.open("http://tf2center.com", "_blank", "height=100, width=100");
+    window.focus;
+    setTimeout(function () { tf2cpage.close(); writeCookie("tf2cloaded", "true", 4); location.reload(), 5750 });
+};
 
 function tf2cCookieChecker() {
     if (document.cookie.indexOf("tf2cloaded=true") != -1) {
         var iframeoverlay = document.getElementsByClassName("iframeoverlay");
-        iframeoverlay[0].style.zIndex = "-2";
+        if (iframeoverlay) {
+            iframeoverlay[0].style.zIndex = "-2";
+        }
     }
 }
 
