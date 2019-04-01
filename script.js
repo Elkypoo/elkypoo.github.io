@@ -61,10 +61,10 @@ function tf2cwindow() {
 };
 
 function tf2cCookieChecker() {
-    if (document.cookie.indexOf("tf2cloaded=true") != -1) {
+    if (document.cookie.indexOf("tf2cloaded=true") == -1) {
         var iframeoverlay = document.getElementsByClassName("iframeoverlay");
         if (iframeoverlay) {
-            iframeoverlay[0].style.zIndex = "-2";
+            iframeoverlay[0].style.zIndex = "2";
         }
     }
 }
