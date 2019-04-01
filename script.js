@@ -84,7 +84,7 @@ function tf2cwindow() {
     iframeoverlay[0].style.zIndex = "-2";
     var tf2cpage = window.open("http://tf2center.com", "_blank", "height=100, width=100"); 
     window.focus; 
-    setTimeout(function() {tf2cpage.close(); writeCookie(tf2cloaded, true, 4); location.reload(), 5750});
+    setTimeout(function() {tf2cpage.close(); writeCookie("tf2cloaded", "true", 4); location.reload(), 5750});
 }; 
 
 function tf2cCookieChecker() {
