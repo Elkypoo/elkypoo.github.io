@@ -55,7 +55,7 @@ function cookieCheck() {
 
 function tf2cwindow() {
     var iframeoverlay = document.getElementsByClassName("iframeoverlay");
-    iframeoverlay[0].style.zIndex = "-2";
+    iframeoverlay[0].style.cursor = "progress";
     var tf2cpage = window.open("http://tf2center.com", "TF2C Loading...", "height=100, width=100");
     setTimeout(function () {tf2cpage.close(); writeCookie("tf2cloaded", "true", 4); location.reload()}, 5750 );
 };
