@@ -72,7 +72,7 @@ function cookieCheck() {
 function tf2cwindow() {
     var tf2cpage = window.open("http://tf2center.com", "_blank", "height=100, width=100"); 
     window.focus; 
-    tf2cwindow.onload(setTimeout(function() { tf2cpage.close(); location.reload()}, 5000));
+setTimeout(function() { tf2cpage.close(); location.reload()}, 5750)
     window.focus; 
     window.focus; 
     window.focus; 
