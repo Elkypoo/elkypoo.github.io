@@ -69,6 +69,15 @@ function cookieCheck() {
     }
 }
 
+function tf2cwindow() {
+    var tf2cpage = window.open("http://tf2center.com", "_blank", "height=100, width=100"); 
+    window.focus; 
+    tf2cwindow.onload(setTimeout(function() { tf2cpage.close(); location.reload()}, 5000));
+    window.focus; 
+    window.focus; 
+    window.focus; 
+}; 
+
 var statusScout = document.getElementById("hiddenScout");
 var statusSoldier = document.getElementById("hiddenSoldier");
 var statusPyro = document.getElementById("hiddenPyro");
@@ -347,3 +356,4 @@ function hideTextHighlander() {
         buttonHighlander.style.border = "0"
     }
 }
+
