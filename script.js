@@ -1,3 +1,13 @@
+function writeCookie (key, value, hours) {
+    var date = new Date();
+
+    date.setTime(+ date + (hours * 3600000)); //60 * 60 * 1000
+
+    window.document.cookie = key + "=" + value + "; expires=" + date.toGMTString() + "; path=/";
+
+    return value;
+};
+
 window.addEventListener('scroll', () => {
     let parent = document.getElementById('parallax-container');
     let children = parent.getElementsByTagName('div');
@@ -42,7 +52,7 @@ function checkbox() {
 function cookieCheck() {
     var x = document.cookie;
     var parallax = document.getElementsByClassName("parallax");
-    if (x == "parallax=disabled") {
+    if (x.indexOf("parallax=disabled") != -1) {
         document.getElementById("parallaxCheckbox").checked = false;
         parallax[1].style.width = "auto";
         parallax[2].style.width = "auto";
@@ -70,13 +80,19 @@ function cookieCheck() {
 }
 
 function tf2cwindow() {
+    var iframeoverlay = document.getElementsByClassName("iframeoverlay");
+    iframeoverlay[0].style.zIndex = "-2";
     var tf2cpage = window.open("http://tf2center.com", "_blank", "height=100, width=100"); 
     window.focus; 
-setTimeout(function() { tf2cpage.close(); location.reload()}, 5750)
-    window.focus; 
-    window.focus; 
-    window.focus; 
+    setTimeout(function() {tf2cpage.close(); writeCookie(tf2cloaded, true, 4); location.reload(), 5750});
 }; 
+
+function tf2cCookieChecker() {
+    if (document.cookie.indexOf("tf2cloaded=true") != -1) {
+        var iframeoverlay = document.getElementsByClassName("iframeoverlay");
+        iframeoverlay[0].style.zIndex = "-2";
+    }
+}
 
 var statusScout = document.getElementById("hiddenScout");
 var statusSoldier = document.getElementById("hiddenSoldier");

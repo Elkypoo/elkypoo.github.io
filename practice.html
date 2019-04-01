@@ -25,6 +25,7 @@
 <body onload="
     console.log('Ran onLoad() successfully...')
     cookieCheck();
+    tf2cCookieChecker();
     ">
 
     <body>
@@ -98,10 +99,11 @@
                         might also be no lobbies at the current time. Please maintain a positive attitute during
                         these matches because everyone is trying to have fun and improve.<br> </a></p>
                 <div id="tf2c-outer">
+                    <img src="images/sticky.png" style="z-index:2;cursor:pointer;width:auto;height:100%;left:0" class="iframeoverlay" onclick="tf2cwindow()">
                     <iframe id="tf2c-inner" width="500" height="560" src="https://tf2center.com/lobbies" scrolling="no"
-                        frameborder="0"></iframe>
+                        frameborder="0" style="z-index:1;"></iframe>
                 </div>
-                <p class="tf2c">Not loading? Click <a onclick="tf2cwindow()" href="" style="color:inherit;">here</a> to get preload the page (uses a popup)<br>You can go to the <a
+                <p class="tf2c">Not loading? Click <u><a onclick="tf2cwindow()" style="color:inherit;cursor:pointer;">here</a></u> to get preload the page (uses a popup)<br>You can go to the <a
                         href="http://tf2center.com" style="color:inherit;">TF2Center lobbies page</a> to see the
                     everything.</p><a style="font-size: 2vh;">(Advertisements on this window are from TF2Center and not Frag.TF)<br>(Frag.TF is not affiliated with TF2Center in any way,
                     shape, or form)<br> </a>
