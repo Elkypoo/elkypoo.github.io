@@ -11,6 +11,8 @@
 
 a[href] {
     cursor: pointer;
+    color: inherit;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 html, body {
@@ -255,3 +257,4 @@ height:1200px;
         font-size: 3vh !important;
     }
   }
+
