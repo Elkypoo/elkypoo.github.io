@@ -211,7 +211,7 @@ a.resolutionwarning {
     color: rgb(184, 181, 174);
     text-align: center;
     width: calc(1090px);
-    height: 1010px;
+    height: auto;
     border: #EEEEEE dotted 3px;
     margin-right: 0;
 }
@@ -241,9 +241,12 @@ a.resolutionwarning {
     color: rgb(184, 181, 174);
     text-align: center;
     width: 790px;
-    height: 1010px;
+    height: 100%;
     border: #EEEEEE dotted 3px;
     margin-right: 0;
+}
+.right_part {
+    height: 0;
 }
 #tf2c-outer {
 width: 740px;
