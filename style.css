@@ -90,7 +90,6 @@ h2, p {
 h2 {
     text-align: left;
     left: 2vw;
-    -font-weight: 400;
     font-size: 3.75vh;
     padding: 3% 0;
     background-color: rgba(30, 29, 34, 0);
@@ -204,18 +203,47 @@ a.resolutionwarning {
     background-color: #eee;
   }
 
-#container { width:100vw; height:auto; margin:auto; }
+.left_part {
+    width: auto;
+}
+
+#newbiemixes {
+    color: rgb(184, 181, 174);
+    text-align: center;
+    width: calc(1090px);
+    height: 1010px;
+    border: #EEEEEE dotted 3px;
+    margin-right: 0;
+}
+
+.newbiemixes {
+    padding-bottom: 5px;
+    width: auto;
+    text-align: center;
+    font-size: 2.2vh;
+    padding: 0 25px;
+}
+
+.newbiemixeslistparent , .newbiemixeslist {
+    font-size: 2.2vh;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    list-style-type: none;
+}
+
 .tf2c {
     padding-bottom: 5px;
-    padding-left: 2.5%;
+    padding-left: 25px;
     width: 740px;
     text-align: center;
 }
 #tf2c {
-    color: #A2A09A;
+    color: rgb(184, 181, 174);
     text-align: center;
-    width: 740px;
-    
+    width: 790px;
+    height: 1010px;
+    border: #EEEEEE dotted 3px;
+    margin-right: 0;
 }
 #tf2c-outer {
 width: 740px;
@@ -257,4 +285,3 @@ height:1200px;
         font-size: 3vh !important;
     }
   }
-
