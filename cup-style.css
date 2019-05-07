@@ -79,11 +79,11 @@ ul.topnav {
     }
   
   ul.topnav li a.active {
-      background-color: #395C78;
+      background-color: #BE4A39;
       border-left: #EEEEEE 0px solid;
       border-right: #EEEEEE 0px solid;
       z-index: 4;
-      border-bottom: #395C78 0 solid;
+      border-bottom: #BE4A39 0 solid;
     }
   
   ul.topnav li.right {float: right;}
@@ -282,7 +282,7 @@ height:1200px;
     }
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 800px) {
     ul.topnav li.right, 
     ul.topnav li {float: none !important;}
     img {width: 5.5vh !important;}
