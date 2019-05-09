@@ -271,7 +271,7 @@ width:1280px;
 height:1200px;
 }
 
-li.locations, ul {
+li.locations, ul.locations {
     font-size: 2.5vh;
     overflow: hidden;
     width: 65vw;
