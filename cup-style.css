@@ -271,6 +271,22 @@ width:1280px;
 height:1200px;
 }
 
+li.locations, ul {
+    font-size: 2.5vh;
+    overflow: hidden;
+    width: 65vw;
+    padding-left: 4.5%;
+    text-align: left;
+    padding-bottom: 1vh;
+    background-color: rgba(0, 0, 0, 0);
+    color: #EEEEEE;
+    font-family: 'Roboto', sans-serif;
+}
+
+p.center.bridge {
+    padding-bottom: 2vh;
+}
+
 
 @media screen and (min-width: 2561px) { 
     #parallax-container div {
