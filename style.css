@@ -117,12 +117,12 @@ p {
 
 img {
     float: right;
-    width: 13vh;
+    width: 12vh;
     padding: 2vw 2vw; 
     border-radius: 2vw;
     text-align: center;
     background:rgba(57, 92, 120, 1);
-    right: 10vw;
+    right: 2vw;
 }
 
 .iframeoverlay {
@@ -275,10 +275,9 @@ height:1200px;
     }
 }
 
-@media only screen and (max-width: 740px) {
+@media (max-width: 800px) {
     ul.topnav li.right, 
     ul.topnav li {float: none !important;}
-    img {width: 5.5vh !important;}
     #parallax-container div {
         width:auto;
         height:auto; 
