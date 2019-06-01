@@ -290,10 +290,9 @@ a.resolutionwarning {
     }
 }
 
-@media only screen and (max-width: 740px) {
+@media (max-width: 800px) {
     ul.topnav li.right, 
     ul.topnav li {float: none !important;}
-    img {width: 5.5vh !important;}
     #parallax-container div {
         width:auto;
         height:auto; 
