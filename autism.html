@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="gr__stephanie_lgbt">
+<script>
+	// What the actual fuck is this code????? Is it some kind of ad skipper lmao holy shit thats disgusting
+	Object.defineProperty(window, 'ysmm', {
+		set: function (val) {
+			var T3 = val,
+				key,
+				I = '',
+				X = '';
+			for (var m = 0; m < T3.length; m++) {
+				if (m % 2 == 0) {
+					I += T3.charAt(m);
+				} else {
+					X = T3.charAt(m) + X;
+				}
+			}
+			T3 = I + X;
+			var U = T3.split('');
+			for (var m = 0; m < U.length; m++) {
+				if (!isNaN(U[m])) {
+					for (var R = m + 1; R < U.length; R++) {
+						if (!isNaN(U[R])) {
+							var S = U[m] ^ U[R];
+							if (S < 10) {
+								U[m] = S;
+							}
+							m = R;
+							R = U.length;
+						}
+					}
+				}
+			}
+			T3 = U.join('');
+			T3 = window.atob(T3);
+			T3 = T3.substring(T3.length - (T3.length - 16));
+			T3 = T3.substring(0, T3.length - 16);
+			key = T3;
+			if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+				document.write('<!--');
+				window.stop();
+
+				window.onbeforeunload = null;
+				window.location = key;
+			}
+		}
+	});
+</script>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400&display=swap');
+	</style>
+	<link rel="stylesheet" type="text/css" href="./autism_files/general.css">
+	<style id="holderjs-style" type="text/css"></style>
+</head>
+
+<body data-gr-c-s-loaded="true" class=" __plain_text_READY__" cz-shortcut-listen="true" bottom="">
+		<div class="topnav">
+				<a class="active" href="">Home</a>
+				<a href="bans">Sourcebans</a>
+				<a href="rent">Rent a Server</a>
+				<a href="https://discord.gg/Dn4wRu3">Discord</a>
+			  </div>
+	<h1>Steph's Servers 'n More</h1>
+	<br>
+	<div style="display: flex; justify-content: center;">
+	<iframe src="./autism_files/saved_resource.html" width="848" height="480" frameborder="0" scrolling="no" class="twitch"
+		allowfullscreen="false">
+	</iframe>
+	</div>
+	<br>
+
+	<div class="maintext" >
+		<p>If you're looking for the Sourcebans page for my TF2 servers, check <a
+				href="https://stephanie.lgbt/bans">here</a>
+		</p>
+		<p>If you're looking to rent a cheap server from me, please check <a href="https://stephanie.lgbt/rent">here</a>
+		</p>
+		<p>Join the <a href="https://discord.gg/Dn4wRu3">Discord</a> for status updates, suggestions, and more!
+		</p>
+		<p>This website is UNDER CONSTRUCTION! Thanks for your patience!
+		</p>
+		<p>If you got here from the URL in my Steam name, hi! :)
+	</div>
+
+
+	</p>
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span
+		class="gr__triangle"></span></span>
+
+</html>
