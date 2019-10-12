@@ -58,11 +58,12 @@ h1 {
 	  border: white 80px solid;
 }
 
+
 body {
 	background: linear-gradient(238deg, red, orange, yellow, green, blue, purple);
 	background-size: 1200% 1200%;
-	-webkit-animation: rainbow 0.1s ease infinite;
-	animation: rainbow 0.1s ease infinite;
+	-webkit-animation: rainbow 0.001s ease infinite;
+	animation: rainbow 0.001s ease infinite;
   }
   @-webkit-keyframes rainbow {
 	0% { background-position: 0% 50% }
