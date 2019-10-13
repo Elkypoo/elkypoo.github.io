@@ -60,10 +60,10 @@ h1 {
 
 
 body {
-	background: linear-gradient(238deg, red, red red orange, orange, orange yellow, green, green, green, blue, purple, purple, purple);
+	background: linear-gradient(238deg, red, red, red, orange, orange, orange, yellow, green, green, green, blue, purple, purple, purple);
 	background-size: 1200% 1200%;
-	-webkit-animation: rainbow 0.1s ease infinite;
-	animation: rainbow 0.1s ease infinite;
+	-webkit-animation: rainbow 0.001s ease infinite;
+	animation: rainbow 0.001s ease infinite;
   }
   @-webkit-keyframes rainbow {
 	0% { background-position: 0% 50% }
