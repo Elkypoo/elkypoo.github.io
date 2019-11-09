@@ -36,6 +36,7 @@
 <body onload="
 console.log('Ran onLoad() successfully...')
 cookieCheck();
+window.alert('This cup has been played and finished, there will eventually be another one.\n\nHang tight :)')
 ">
 
     <body>
@@ -44,19 +45,35 @@ cookieCheck();
 
         <ul class="topnav">
             <li>
-                <a href="cupclasses">Classes</a>
+                <a href="index">Home</a>
             </li>
             <li>
-                <a href="cupgamemodes">Gamemodes</a>
+                <a href="classes">Classes</a>
             </li>
             <li>
-                <a class="active" href="cup">Cup</a>
+                <a href="gamemodes">Gamemodes</a>
+            </li>
+            <li>
+                <a href="videos">Videos</a>
+            </li>
+            <li>
+                <a href="partners">Partners</a>
+            </li>
+            <li>
+                <a href="practice">Practice</a>
+            </li>
+            <li> 
+              <a class="active" href="cup">Cup</a>
             </li>
             <li style="float: right;">
-                <a>Frag Academy</a>
+                <a href="about">Frag Academy</a>
             </li>
             <li style="float: right;">
                 <a target="_blank" href="https://discord.gg/WQfTw6V">Cup Discord</a>
+            </li>
+            <li style="float: right;">
+                <a title="disable this if you have a slow internet connection"><input type="checkbox"
+                        id="parallaxCheckbox" onclick="checkbox()"> Parallax Background</a>
             </li>
         </ul>
 
