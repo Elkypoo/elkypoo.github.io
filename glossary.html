@@ -114,22 +114,18 @@ cookieCheck();
                 style="font-size:1.2vw;background-color:rgba(0,0,0,0);"><br><br>Due to various reasons, certain visual
                 effects have been disabled at this resolution/zoom.</a></h1>
 
-        <!---<div class="p1">
-            <h2 class="first">What is this site?</h2>
-            <img src="images/tflogo.png" class="index">
-            <p>This is a (currently incomplete)<br></p>
-        </div>--->
-        <div class="p1">
+        <div class="p1" style="text-align: center;">
             <h2></h2>
-            <p>There is a lot of different slang that is used by the TF2 community. This glossary will help you
+            <p class="intro" style="padding: 3vh; text-align:center; margin: 0 0 0 27vh;">There is a lot of different
+                slang that is used by the TF2 community. This glossary will help you
                 understand and learn some new words and phrases which are used often, and sometimes not that often.</p>
             <input type="text" id="dictionaryInput" onkeyup="dictionarySearch()" placeholder="Search for phrases..">
         </div>
         <div class="p2" style="padding-bottom: 200px;">
             <table id="dictionaryTable">
                 <tr class="header">
-                    <th style="width:20%; opacity: 0.5;">Phrase</th>
-                    <th style="width:80%; opacity: 0.5;">Definition</th>
+                    <th style="width:20%; opacity: 0.75;">Phrase</th>
+                    <th style="width:80%; opacity: 0.75;">Definition</th>
                 </tr>
                 <tr>
                     <td>4v4/4s/Fours</td>
@@ -146,11 +142,66 @@ cookieCheck();
                     <td>Generally seen as the standard for competitive TF2. Gamemode where teams of 6 fight against
                         eachother. See the <a href="gamemodes">gamemodes</a> page for more information.</td>
                 </tr>
-
+                <tr>
+                    <td>Airshot</td>
+                    <td>A shot with a projectile on a player who is in the air. Then further the airshot, the harder it
+                        is to consider the distance and the time it takes for the projectile to reach the player.</td>
+                </tr>
+                <tr>
+                    <td>Alt</td>
+                    <td>Used to describe an account that is used as an alternate for someone, either to hide the players
+                        identity or their skill level, allowing them to play in a lower division than they should play
+                        in.</td>
+                </tr>
+                <tr>
+                    <td>Backcap/Backcapping</td>
+                    <td>Used for when a player sneaks behind the enemy team and captures the point when they aren't
+                        close enough to it to defend it. Most common on the last point where it can capture especially
+                        quick.</td>
+                </tr>
+                <tr>
+                    <td>Baiting</td>
+                    <td>When a player on your team baits you into pushing together but doesn't follow through, leaving
+                        you alone and in too deep.</td>
+                </tr>
+                <tr>
+                    <td>BM/Bad Manners</td>
+                    <td>Used to describe when a team is using bad manners or sportsmanship in a competitive game. This
+                        can range from chat messages to using items like the Rocket Jumper to show how much better one
+                        team is than the other.</td>
+                </tr>
+                <tr>
+                    <td>Bomb/Bombing</td>
+                    <td>To rocket or sticky-jump above the enemies to bomb them from above.</td>
+                </tr>
                 <tr>
                     <td>"Clear Comms"</td>
                     <td>This person is telling everyone in voice chat to be quiet, either so they can say something or
                         hear someone else make a callout.</td>
+                </tr>
+                <tr>
+                    <td>Clutch</td>
+                    <td>When a player performs well under pressure during a crucial part in a match (e.g. being the only
+                        player alive on last and saving the point from 3 people).</td>
+                </tr>
+                <tr>
+                    <td>Crutch</td>
+                    <td>Typically used to describe a weapon that compensates for a player's lack of skill (e.g. "he uses
+                        Heavy as a crutch because he can't play anything else").</td>
+                </tr>
+                <tr>
+                    <td>Comms</td>
+                    <td>Short for Communcations (e.g. Discord, Mumble, etc).</td>
+                </tr>
+                <tr>
+                    <td>Demo (Class)</td>
+                    <td>Short for Demoman.</td>
+                </tr>
+                <tr>
+                    <td>Demo (Recording)</td>
+                    <td>A recording of all game events from the recorder's POV. Started using the command 'record
+                        [demoname]'. To view or play demos, use the command 'playdemo [demoname]'. Some leagues require
+                        you to record these in the event of there being problems with the match.</td>
                 </tr>
                 <tr>
                     <td>Dry Push</td>
@@ -160,10 +211,18 @@ cookieCheck();
                 <tr>
                     <td>Force/Forcing</td>
                     <td>This term is used to describe when a Medic is forced to used their ÜberCharge. It is done when
-                        the
-                        Medic is in an unadvantageous spot so that the ÜberCharge is rendered useless and wasted. You
-                        can
-                        force by scaring the Medic into using their ÜberCharge before needed.</td>
+                        the Medic is in an unadvantageous spot so that the ÜberCharge is rendered useless and wasted.
+                        You
+                        can force by scaring the Medic into using their ÜberCharge before needed.</td>
+                </tr>
+                <tr>
+                    <td>FOV</td>
+                    <td>Field of view. Set using the console command 'fov_desired'. Default is 70, though it is highly
+                        recommended that you use 90.</td>
+                </tr>
+                <tr>
+                    <td>Frag</td>
+                    <td>Synonym for kill, sometimes used when the player has been gibbed.</td>
                 </tr>
                 <tr>
                     <td>Have/Having</td>
@@ -196,8 +255,19 @@ cookieCheck();
                         you will push.</td>
                 </tr>
                 <tr>
+                    <td>Meta</td>
+                    <td>Most common/most effective way to player the game, as stated by the community. Refers to
+                        playstyles or weapon loadouts.</td>
+                </tr>
+                <tr>
+                    <td>MGE</td>
+                    <td>Stands for My Gaming Edge. MGE is a gamemode on community servers where players can 1v1 on
+                        snippets of maps. MGE is a very good tool for practicing your deathmatch skills and can be an
+                        arena for where you can duel people fairly.</td>
+                </tr>
+                <tr>
                     <td>Mid</td>
-                    <td>Used to describe the middle point on a CP map. </td>
+                    <td>Used to describe the middle point on a CP map.</td>
                 </tr>
                 <tr>
                     <td>Offclass</td>
@@ -208,13 +278,35 @@ cookieCheck();
                     <td>The act of targeting and killing an enemy without needing help.</td>
                 </tr>
                 <tr>
+                    <td>Pocket</td>
+                    <td>Short for Pocket Soldier.</td>
+                </tr>
+                <tr>
+                    <td>Pop/Popping</td>
+                    <td>The act of using ÜberCharge.</td>
+                </tr>
+                <tr>
                     <td>PUG/Pick-Up Game</td>
                     <td>An unofficial match held in a competitive setting. Used to practice competitive TF2. Instances
                         include TF2Center, <s>FaceIT</s>, TF2Stadium, and various, community PUG groups.</td>
                 </tr>
                 <tr>
+                    <td>Ringer</td>
+                    <td>A player who plays for a team, but is not officially rostered. Different leagues have different
+                        rules for how ringers can be accepted.</td>
+                </tr>
+                <tr>
+                    <td>Roamer</td>
+                    <td>Short for Roamer Soldier.</td>
+                </tr>
+                <tr>
                     <td>Roll</td>
                     <td>Used to describe when a game is very one-sided. </td>
+                </tr>
+                <tr>
+                    <td>Roster</td>
+                    <td>The official list of players who are on your team. This can usually be found on the page of your
+                        team, as well as how to add people to the roster.</td>
                 </tr>
                 <tr>
                     <td>Rollout</td>
@@ -227,22 +319,62 @@ cookieCheck();
                     <td>Short for Sacrifice.</td>
                 </tr>
                 <tr>
+                    <td>Sandbagging</td>
+                    <td>Synonymous with Smurfing. When a player uses an account which looks like it should be in an
+                        easier division than the player belongs in. Especially common in UGC.</td>
+                </tr>
+                <tr>
                     <td>Scrim</td>
                     <td>Short for Scrimmage. An unofficial match between two teams. Used to practice playing as a team,
                         a certain map, or coordination.</td>
+                </tr>
+                <tr>
+                    <td>Smurfing</td>
+                    <td>Synonymous with Sandbagging. When a player uses an account which looks like it should be in an
+                        easier division than the player belongs in. Especially common in UGC.</td>
+                </tr>
+                <tr>
+                    <td>STV</td>
+                    <td>A demo recording from the server. Can be used to view any players POV or to see alternate
+                        angles. Automatically recorded in competitive games using the spectator named (by default)
+                        SourceTV. </td>
+                </tr>
+                <tr>
+                    <td>Sub/Substitute</td>
+                    <td>A player who substitutes for a player on a team. Substitutes are always rostered and will be
+                        used if a backup is needed.</td>
+                </tr>
+                <tr>
+                    <td>Surf/Surfing</td>
+                    <td>To use the explosive knockback of a rocket or something else to move yourself into a more
+                        advantageous position. Often used and practiced by Medics to get out of bad situations.</td>
                 </tr>
                 <tr>
                     <td>Solly</td>
                     <td>Short for Soldier.</td>
                 </tr>
                 <tr>
+                    <td>Tele</td>
+                    <td>Short for Teleporter.</td>
+                </tr>
+                <tr>
                     <td>Trade</td>
                     <td>Used to describe when a player from each team dies (e.g. "I traded for their Med").</td>
+                </tr>
+                <tr>
+                    <td>Trap/Trapped</td>
+                    <td>Short for Sticky trap. Used to describe how a doorway or choke can be trapped using the
+                        Demoman's stickybombs.</td>
                 </tr>
                 <tr>
                     <td>Ultiduo</td>
                     <td>Gamemode where teams of 2 (a Soldier and a Medic) fight against eachother on a specialized KOTH
                         map.</td>
+                </tr>
+                <tr>
+                    <td>Whitelist</td>
+                    <td>The item restriction rules that the server/league you are playing on has enabled. This usually
+                        disables unbalanced weapons and items.</td>
                 </tr>
 
             </table>
