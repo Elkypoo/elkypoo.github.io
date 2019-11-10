@@ -311,6 +311,7 @@ height:1200px;
     width: calc(100% - 100px); /* Full-width */
     border: 1px solid #ddd; /* Add a grey border */
     font-size: 18px; /* Increase font-size */
+    padding-bottom: 200px;
     margin: 0 50px 12px 50px;
   }
   
