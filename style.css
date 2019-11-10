@@ -7,6 +7,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     cursor: default;
+    color: #EEEEEE;
 }
 
 a[href] {
@@ -286,4 +287,37 @@ height:1200px;
         visibility: visible;
         font-size: 3vh !important;
     }
+  }
+
+  #dictionaryInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #EEE; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+    color: #FF00FF;
+  }
+  
+  #dictionaryTable {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+  }
+  
+  #dictionaryTable th, #dictionaryTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+  }
+  
+  #dictionaryTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #dictionaryTable tr.header, #dictionaryTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #FF00FF;
   }

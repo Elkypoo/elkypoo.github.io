@@ -347,4 +347,3 @@ function hideTextHighlander() {
         buttonHighlander.style.border = "0"
     }
 }
-

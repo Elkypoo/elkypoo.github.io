@@ -1,0 +1,248 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#395c78">
+    <meta name="msapplication-TileColor" content="#41297e">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:description"
+        content="Your hub for all things competitive TF2: made to help you and others get into competitive without the hassle.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://frag.tf">
+    <meta property="og:image" content="http://frag.tf/images/logo.png">
+    <meta property="og:title" content="Frag Academy">
+
+    <title>Home - Frag.TF</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84157100-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-84157100-2');
+
+        function dictionarySearch() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("dictionaryInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("dictionaryTable");
+            tr = table.getElementsByTagName("tr");
+
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body onload="
+console.log('Ran onLoad() successfully...')
+cookieCheck();
+">
+
+    <body>
+
+        <div id="parallax-container">
+            <div class="parallax" style="background: url(images/parallax/parallaxlayer6.png);"></div>
+            <div class="parallax" style="background: url(images/parallax/parallaxlayer5.png);"></div>
+            <div class="parallax" style="background: url(images/parallax/parallaxlayer4.png);"></div>
+            <div class="parallax" style="background: url(images/parallax/parallaxlayer3.png);"></div>
+            <div class="parallax" style="background: url(images/parallax/parallaxlayer2.png);"></div>
+            <div class="parallax" style="background: url(images/parallax/parallaxlayer1.png);"></div>
+        </div>
+
+        <ul class="topnav">
+            <li>
+                <a href="index">Home</a>
+            </li>
+            <li>
+                <a href="classes">Classes</a>
+            </li>
+            <li>
+                <a href="gamemodes">Gamemodes</a>
+            </li>
+            <li>
+                <a href="videos">Videos</a>
+            </li>
+            <li>
+                <a href="partners">Partners</a>
+            </li>
+            <li>
+                <a href="practice">Practice</a>
+            </li>
+            <li>
+                <a class="active" href="glossary">Glossary</a>
+            </li>
+            <li>
+                <a href="cup">Cup</a>
+            </li>
+            <li style="float: right;">
+                <a href="about">Frag Academy</a>
+            </li>
+            <li style="float: right;">
+                <a target="_blank" href="https://discord.gg/DTwd8P2">Discord</a>
+            </li>
+            <li style="float: right;">
+                <a title="disable this if you have a slow internet connection"><input type="checkbox"
+                        id="parallaxCheckbox" onclick="checkbox()"> Parallax Background</a>
+            </li>
+        </ul>
+
+        </ul>
+
+
+
+        <h1>Competitive Glossary<a class="resolutionwarning"
+                style="font-size:1.2vw;background-color:rgba(0,0,0,0);"><br><br>Due to various reasons, certain visual
+                effects have been disabled at this resolution/zoom.</a></h1>
+
+        <!---<div class="p1">
+            <h2 class="first">What is this site?</h2>
+            <img src="images/tflogo.png" class="index">
+            <p>This is a (currently incomplete)<br></p>
+        </div>--->
+        <div class="p1">
+            <h2></h2>
+            <p>There is a lot of different slang that is used by the TF2 community. This glossary will help you
+                understand and learn some new words and phrases which are used often, and sometimes not that often.</p>
+            <input type="text" id="dictionaryInput" onkeyup="dictionarySearch()" placeholder="Search for slang..">
+
+            <table id="dictionaryTable">
+                <tr class="header">
+                    <th style="width:20%;">Phrase</th>
+                    <th style="width:80%;">Definition</th>
+                </tr>
+                <tr>
+                    <td>4v4/4s/Fours</td>
+                    <td>Gamemode where teams of 4 fight against eachother. See the <a href="gamemodes">gamemodes</a>
+                        page for more information.</td>
+                </tr>
+                <tr>
+                    <td>6v6/6s/Sixes</td>
+                    <td>Generally seen as the standard for competitive TF2. Gamemode where teams of 6 fight against
+                        eachother. See the <a href="gamemodes">gamemodes</a> page for more information.</td>
+                </tr>
+                <tr>
+                    <td>5CP</td>
+                    <td>Short for 5 Control Points. Used to describe maps which have 5 control points on them, like
+                        Process or Granary.</td>
+                </tr>
+                <tr>
+                    <td>"Clear Comms"</td>
+                    <td>This person is telling everyone in voice chat to be quiet, either so they can say something or
+                        hear someone else make a callout.</td>
+                </tr>
+                <tr>
+                    <td>Dry Push</td>
+                    <td>Pushing into a point or a choke without having an ÜberCharge, usually done when your team has
+                        more players and the enemy doesn't have ÜberCharge.</td>
+                </tr>
+                <tr>
+                    <td>Force/Forcing</td>
+                    <td>This term is used to describe when a Medic is forced to used their ÜberCharge. It is done when
+                        the
+                        Medic is in an unadvantageous spot so that the ÜberCharge is rendered useless and wasted. You
+                        can
+                        force by scaring the Medic into using their ÜberCharge before needed.</td>
+                </tr>
+                <tr>
+                        <td>Have/Having</td>
+                        <td>Used to describe when a Medic has ÜberCharge.</td>
+                    </tr>
+                <tr>
+                    <td>Inhouse Scrim</td>
+                    <td>An unofficial match where a team fights itself, usually involving the team's substitute players.
+                        Used to practice playing as a team, a certain map, coordination, or to try out a potential
+                        player.</td>
+                </tr>
+                <tr>
+                        <td>LFP</td>
+                        <td>Short for Looking For Players. Usually put in a team captain's name when they are looking for a player on a competitive. May include their division and/or classes they need.</td>
+                    </tr>
+                <tr>
+                        <td>LFS</td>
+                        <td>Short for Looking For Scrims. Usually put in a team captain's name when they are looking for teams to scrimmage against.</td>
+                    </tr>
+                <tr>
+                        <td>LFT</td>
+                        <td>Short for Looking For Team. Usually put in someones name when they are looking to join a competitive team. May include their division and/or classes they play.</td>
+                    </tr>
+                <tr>
+                        <td>Maincaller</td>
+                        <td>The person who coordinates and gives directions to the team. This person calls when and where you will push.</td>
+                    </tr>
+                <tr>
+                        <td>Mid</td>
+                        <td>Used to describe the middle point on a CP map. </td>
+                    </tr>
+                <tr>
+                    <td>Offclass</td>
+                    <td>A class that is being played which isn't part of the meta (e.g. Sniper or Spy in 6v6).</td>
+                </tr>
+                <tr>
+                    <td>Pick</td>
+                    <td>The act of targeting and killing an enemy without needing help.</td>
+                </tr>
+                <tr>
+                    <td>PUG/Pick-Up Game</td>
+                    <td>An unofficial match held in a competitive setting. Used to practice competitive TF2. Instances
+                        include TF2Center, <s>FaceIT</s>, TF2Stadium, and various, community PUG groups.</td>
+                </tr>
+                <tr>
+                    <td>Roll</td>
+                    <td>Used to describe when a game is very one-sided. </td>
+                </tr>
+                <tr>
+                        <td>Rollout</td>
+                        <td>The path that a player takes to (usually) the middle control point. Usually the quickest or most effective way to get there. Videos of these can be found on <a href="http://rollout.tf">Rollout.TF</a>.</td>
+                    </tr>
+                <tr>
+                    <td>Sac</td>
+                    <td>Short for Sacrifice.</td>
+                </tr>
+                <tr>
+                    <td>Scrim</td>
+                    <td>Short for Scrimmage. An unofficial match between two teams. Used to practice playing as a team,
+                        a certain map, or coordination.</td>
+                </tr>
+                <tr>
+                    <td>Solly</td>
+                    <td>Short for Soldier.</td>
+                </tr>
+                <tr>
+                    <td>Trade</td>
+                    <td>Used to describe when a player from each team dies (e.g. "I traded for their Med").</td>
+                </tr>
+                <tr>
+                    <td>Ultiduo</td>
+                    <td>Gamemode where teams of 2 (a Soldier and a Medic) fight against eachother on a specialized KOTH
+                        map.</td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="footer">
+            <p class="footer-p">Frag Academy, created by <a target="_blank" href="http://steamcommunity.com/id/elkyt"
+                    class="link">Elk
+                </a><br>for the
+                betterment of the TF2 community :)</p>
+        </div>
+    </body>
