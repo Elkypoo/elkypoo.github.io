@@ -122,8 +122,12 @@ img {
     padding: 2vw 2vw; 
     border-radius: 2vw;
     text-align: center;
-    background:rgba(57, 92, 120, 1);
+    background:rgba(157, 92, 120, 1);
     right: 2vw;
+}
+
+.loadout {
+    padding: 100vh;
 }
 
 .iframeoverlay {
